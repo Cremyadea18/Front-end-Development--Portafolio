@@ -212,6 +212,8 @@ flex-direction: column;
 display: flex;
 }
 
+.text-container {text-align:justify}
+
 .about-pic {
 border-radius: 2rem;
 width: 320px;
