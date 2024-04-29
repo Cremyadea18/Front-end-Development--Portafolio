@@ -23,7 +23,7 @@ justify-content: center;
 align-items: center;
 }
 
-.container1 { 
+.intro { 
 position: relative;
 display: flex;
 flex-direction: column;
@@ -201,6 +201,66 @@ display: flex;
 place-content: center;
 place-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .container1 .container12,
+    .container2 .container13,
+    .Rick .content h1,
+    .Rick .content1 h1,
+    .Rick .content2 h1,
+    .Rick .content3 h1,
+    .Rick .content p,
+    .Rick .content1 p,
+    .Rick .content2 p,
+    .Rick .content3 p,
+    .texto1,
+    .texto-p {
+        font-size: 16px;}
+    
+    .intro {
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.container1 {
+    justify-content: center;
+    align-items: center;}
+
+
+    .container12 {width: 200px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;}
+
+    .container-text {
+        width: 250px; 
+        margin: auto; 
+        padding-bottom: 60px;
+    }
+
+    .container11 {
+        padding: 20px; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .container11 .imagen-1 img {
+        width: 200px; 
+        height: auto; 
+        margin-bottom: 10px; 
+    }
+
+    .container11 .imagen-1 {
+        order: -1; 
+        display: flex; 
+        justify-content: center;
+        margin-right: 150px; 
+    }
+        }
 
 
 </style>
