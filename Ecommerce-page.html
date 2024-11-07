@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    }
+    
+    html {
+    font-family: "Noto Sans", sans-serif;}
+
+    .container {
+    width: 100%;
+    height: 100%;
+    margin: 200px 0;
+    }
+
+    .container h1 {
+     text-align: center;
+    padding-bottom: 30px;}
+    
+    .main-container {display: grid;
+    grid-template-columns: repeat(4, minmax(150px,200px)); 
+    grid-auto-rows: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    }
+
+    .main-container-primero { width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    grid-area: 1 / 1 / 3 / 3;
+    background-image: url("./assets/Ecommerce-assets/1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    place-content: end;
+    opacity: 90%;
+    color: azure;
+    }
+
+    .main-container div:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    }
+
+    .main-container-segundo {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url("./assets/Ecommerce-assets/2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    place-content: end;
+    }
+
+    .main-container-tercero {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url("./assets/Ecommerce-assets/3.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    place-content: end;
+    }
+
+    .main-container-cuarto {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url("./assets/Ecommerce-assets/4.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    place-content: end;
+    }
+
+    .main-container-quinto {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url("./assets/Ecommerce-assets/5.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    place-content: end;
+    
+    }
+
+    .title-container {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:black;
+    font-family: "Noto Sans", sans-serif;
+    }
+
+    @media screen and (max-width: 800px) {
+.main-container {grid-template-columns:  repeat(1, minmax(250px,350px));}
+.main-container-primero {grid-area: auto;}}
+
+
+</style>
+<body>
+<section class="container">
+    <h1 class="Discover">Discover the best</h1>
+    <div class="main-container">
+    <div class="main-container-primero"><h1 class="title-container">Hogar</h1></div>
+     <div class="main-container-segundo"><h1 class="title-container">Diseño</h1></div>
+     <div class="main-container-tercero"><h1 class="title-container">Ofertas</h1></div>
+     <div class="main-container-cuarto"><h1 class="title-container">Regalos</h1></div>
+     <div class="main-container-quinto"><h1 class="title-container">Nuevo</h1></div>
+    </div>
+</section> 
+</body>
+</html>
