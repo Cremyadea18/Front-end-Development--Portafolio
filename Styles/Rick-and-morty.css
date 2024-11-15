@@ -1,0 +1,300 @@
+.creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    body {
+    margin: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .intro { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 1000px;
+    background-image: url(/Assets/First-Section.png);
+    background-attachment: fixed;
+    background-size: cover;
+    place-content: center;
+    place-items: center;}
+    
+    .container12 { 
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: bisque ;
+    opacity: 0.8;
+    font-family:  "Creepster", system-ui;
+    font-size: 80px;
+    color: #02afc5;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    border-color: #97ce4c;
+    }
+    
+    .aventures {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/rick-and-morty-tv-1920x1080-9367.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    }
+    
+    .container13 {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: #97ce4c;
+    opacity: 0.8;
+    font-family:  "Creepster", system-ui;
+    font-size: 30px;
+    color: #f0e14a;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    }
+    .container11{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;}
+    
+    .imagen1{
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    object-fit: cover;
+    padding-left: 100px;
+    padding-top: 100px;}
+    
+    .texto1 {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #02afc5;
+    padding-top: 100px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;}
+    
+    .container-text {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    width: 700px;
+    }
+    
+    .texto-p {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    }
+    
+    .Rick {
+    text-align: center;
+    width: auto;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    background-image: url(/Assets/minimal-art-rick-and-morty.jpeg);
+    }
+    
+    .Rick p {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    background-size: 800px;
+    }
+    .content {
+    background-color:#02afc5;
+    width: 600px;
+    height: 400px;
+    opacity: 0.7;
+    }
+    .content1 {
+    background-color: #97ce4c;
+    width: 600px;
+    height: 400px;
+    opacity: 0.7;}
+    
+    .content2 {
+    background-color: #e89ac7;
+    width: 600px;
+    height: 400px;
+    opacity: 0.8;}
+    
+    .content3 {
+    background-color: #f0e14a;
+    width: 600px;
+    height: 400px;
+    opacity: 0.8;
+    }
+    
+    .tablink {
+    display: flex;
+    margin: 5px;
+    }
+    .rick {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 100px;
+    color: black;
+    }
+    
+    .morty {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 100px;
+    color: black;
+    }
+    
+    .imagen1 {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .container1 .container12,
+        .container2 .container13,
+        .Rick .content h1,
+        .Rick .content1 h1,
+        .Rick .content2 h1,
+        .Rick .content3 h1,
+        .Rick .content p,
+        .Rick .content1 p,
+        .Rick .content2 p,
+        .Rick .content3 p,
+        .texto1,
+        .texto-p {
+            font-size: 16px;}
+        
+        .intro {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+    
+    .aventures {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+    .container1 {
+        justify-content: center;
+        align-items: center;}
+    
+    
+        .container12 {width: 200px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;}
+    
+    .container13 {width: 200px;
+        height: auto;
+        justify-content: center;
+        align-items: center;}
+    
+        .container-text {
+            width: 250px; 
+            margin: auto; 
+            padding-bottom: 60px;
+        }
+    
+        .container11 {
+            padding: 20px; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .container11 .imagen-1 img {
+            width: 200px; 
+            height: auto; 
+            margin-bottom: 10px; 
+        }
+    
+        .container11 .imagen-1 {
+            order: -1; 
+            display: flex; 
+            justify-content: center;
+            margin-right: 150px; 
+        }
+        .content {
+    background-color:#02afc5;
+    width: 250px;
+    height: auto;
+    opacity: 0.7;
+    padding-bottom: 50px;
+    }
+    .content1 {
+    background-color: #97ce4c;
+    width: 250px;
+    height: auto;
+    opacity: 0.7;
+    padding-bottom: 50px;}
+    
+    .content2 {
+    background-color: #e89ac7;
+    width: 250px;
+    height: auto;
+    opacity: 0.8;
+    padding-bottom: 50px;}
+    
+    .content3 {
+    background-color: #f0e14a;
+    width: 250px;
+    height: auto;
+    opacity: 0.8;
+    padding-bottom: 50px;
+    }
+            }
+    
+    

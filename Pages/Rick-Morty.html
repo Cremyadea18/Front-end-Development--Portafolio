@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/Styles/Rick-and-morty.css">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="intro">
+     <div class="container1">
+    <span class="container12"> Rick and Morty </span>
+    </div>
+    </section> 
+    <section>
+        <div class="container11">
+        <div class="imagen-1"><img src="/Assets/Rick.png" alt="image" class="imagen1"></div>
+        <div class="container-text"><span class="texto1">¿Que tanto sabes de Rick and Morty?</span>
+        <span class="texto-p">Rick and Morty" comienza con la vida aparentemente normal de Morty Smith, un típico adolescente de secundaria, hasta que su abuelo, Rick Sánchez, aparece en su vida después de una larga ausencia. Rick, un genio científico alcohólico, arrastra a Morty en una serie de aventuras interdimensionales y extraterrestres, desafiando las leyes del espacio y el tiempo. Juntos, viajan a través de portales a mundos extraños y enfrentan peligros cósmicos, todo mientras intentan equilibrar la vida familiar y escolar de Morty con las emocionantes y a menudo peligrosas hazañas de Rick</span>
+        </div>
+        
+        </div>
+    </section>
+   <section class="aventures">
+    <div class="container2">
+        <span class="container13">¡Únete a las increíbles aventuras de Rick y Morty! Explora dimensiones paralelas, enfréntate a extraterrestres extravagantes y vive momentos de humor irreverente en cada episodio. ¡No te pierdas esta experiencia que desafiará tu percepción de la realidad!</span>
+       </div>
+   </section>
+ <section class="character-section">
+    <div class="Rick">
+        <div class="tabcontent" id="Rick Sánchez">
+            <div class="content">
+                <h1 class="rick">Rick Sánchez</h1>
+                <p>Un científico brillante pero alcohólico y cínico que arrastra a su nieto Morty en aventuras interdimensionales.</p>
+            </div>
+           </div>
+           <div class="tabcontent" id="Morty Smith">
+            <div class="content1">
+                <h1 class="morty">Morty Smith</h1>
+            <p>El nieto de Rick, que suele ser más ingenuo y menos seguro que su abuelo, pero que a menudo demuestra valentía y astucia en sus aventuras.</p>
+            </div>
+           </div>
+        
+           <div class="tabcontent" id="Beth Smith">
+            <div class="content2">
+                <h1 class="morty">Beth Smith</h1>
+                <p>La hija de Rick y madre de Morty y Summer. Es una cirujana veterinaria y a menudo trata de reconciliar su relación con su padre.</p>
+            </div>
+           </div>
+        
+           <div class="tabcontent" id="Summer Smith">
+            <div class="content3">
+                <h1 class="morty">Summer Smith</h1>
+                <p>La hermana adolescente de Morty, que a menudo se une a Rick y Morty en sus locas aventuras.</p>
+             </div>
+           </div>
+    
+           <div class="tablink">
+            <button id="defaultopen"  class="tablink" onclick="opencharacter ('Rick Sánchez')">Rick Sánchez</button>
+            <button class="tablink" onclick="opencharacter('Morty Smith')" id="notopen">Morty Smith</button>
+            <button class="tablink" onclick="opencharacter('Beth Smith')" id="notopen">Beth Smith</button>
+            <button class="tablink" onclick="opencharacter('Summer Smith')" id="notopen">Summer Smith</button>
+           </div>  
+       </div>
+
+ </section>
+  <script>
+    function opencharacter(characterName) {
+        var i, tabcontent; 
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = 'none';
+        }
+         
+        document.getElementById(characterName).style.display = 'block';
+    }
+    document.getElementById("defaultopen").click();
+   </script>
+</body>
+</html>
