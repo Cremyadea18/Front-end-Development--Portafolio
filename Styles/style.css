@@ -265,6 +265,7 @@ margin-bottom: 2rem;
 display: flex;
 justify-content: center;
 flex-direction: column;
+margin-top: 30px;
 }
 
 .article-container {
