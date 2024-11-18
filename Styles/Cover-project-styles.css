@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+  --blue: #EAF0F8;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+display: grid;
+grid-template-rows: 80px 400px 80px 100px ;
+height: 100vh;
+background: linear-gradient(#411f1d, #b1512b )
+}
+
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.header-title {
+margin-top: 60px;
+margin-bottom: 60px;
+color: #EAF0F8;}
+
+.cards { 
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+scroll-snap-type: x proximity;
+overflow-x: scroll;
+gap: 20px;
+scrollbar-width: none;
+}
+
+.cards div {
+min-width: 200px;
+max-width: 250px;
+height: 280px;
+border-radius: 22px;
+box-shadow:  -12px -12px 20px #512d2d,
+             12px 12px 20px #6d3d3d;}
+
+
+.cards-section-1 { background-image: url("/Assets/soul\ cover.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;}
+
+.cards-section-2 {
+background-image:url("/Assets/Indie.jpg") ;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.cards-section-3 {
+background-image: url("/Assets/bago.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.cards-section-4 {
+background-image: url("/Assets/Gaming.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.progress-bar {
+display: grid;
+justify-content: center;
+text-align: center;
+height: 100px;
+}
+
+.progress-bar--title {margin: 0%; 
+color:#EAF0F8;}
+
+.progress-bar-subtitle {
+margin: 5%;
+color: #EAF0F8;}
+
+.progress-bar--image {
+width: 200px;
+color: #EAF0F8;}
+
+
+.progress-bar--time {
+display: flex;
+min-width: 320px;
+width: fit-content;
+justify-content:center;
+align-items: center;
+margin: -70px;
+padding: 0%;
+}
+
+.progress-bar--time--title {
+font-size: 0.8rem;
+font-weight: 700;
+color: #EAF0F8;
+}
+
+.buttons {
+display: flex;
+width: 100%;
+margin-top: 70px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.buttons-footer-1 {
+width: 35px;
+height: 35px;
+border-radius: 52px;
+background: #5f3535;
+box-shadow: -6px -6px 13px #512d2d,
+6px 6px 13px #6d3d3d;
+justify-content: center;
+align-items: center;
+place-content: center;
+padding: 5px;}
+
+.buttons-footer-2 {
+width: 38px;
+height: 38px;
+border-radius: 52px;
+background: #5f3535;
+box-shadow: -6px -6px 13px #512d2d,
+6px 6px 13px #6d3d3d;
+justify-content: center;
+align-items: center;
+place-content: center;
+padding: 4px;}
+
+.buttons-footer-3 {
+width: 42px;
+height: 42px;
+border-radius: 52px;
+background: #5f3535;
+box-shadow: -6px -6px 13px #512d2d,
+6px 6px 13px #6d3d3d;
+justify-content: center;
+align-items: center;
+place-content: center;
+padding: 5px;} 
+
+footer img {
+width: 100%;
+height: 100%;}
